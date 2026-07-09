@@ -14,8 +14,8 @@ const expSchema = z.object({
   title:      z.string().min(1, 'Job title required'),
   start_date: z.string().min(1, 'Start date required'),
   end_date:   z.string().optional(),
-  current:    z.boolean().default(false),
-  bullets:    z.array(z.object({ value: z.string() })).default([]),
+  current:    z.boolean(),
+  bullets:    z.array(z.object({ value: z.string() })),
 })
 
 const eduSchema = z.object({
