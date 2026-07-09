@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* 3-color palette: Navy · Blue · Orange — extracted from logo */
+:root {
+  --navy:   #1C3A6B;
+  --blue:   #2B79C2;
+  --orange: #E8681E;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #F8FAFD;
+  background-image:
+    radial-gradient(ellipse 70% 50% at 10% 0%,   rgba(43,121,194,0.07)  0%, transparent 60%),
+    radial-gradient(ellipse 55% 45% at 90% 100%,  rgba(232,104,30,0.05) 0%, transparent 55%);
+  min-height: 100vh;
+  color: #1C3A6B;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C7D9EE; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #9BBAD8; }
